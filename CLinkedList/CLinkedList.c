@@ -6,9 +6,10 @@
 // In the first part, we demonstrate a singly linked list with zoo animals as the nodes
 //
 // This example freely distributable under terms of MIT open source license
+// https://opensource.org/licenses/MIT
 
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 // our animal types
 enum AnimalType {
@@ -62,7 +63,7 @@ int main()
 	if (NULL == lion1)
 	{
 		printf("\n Lion creation failed \n");
-		return 0;
+		return 1;
 	}
 	lion1->type = Lion;
 	lion1->sex = Male;
@@ -78,7 +79,7 @@ int main()
 	if (NULL == lion2)
 	{
 		printf("\n Lion creation failed \n");
-		return 0;
+		return 1;
 	}
 	lion2->type = Lion;
 	lion2->sex = Female;
@@ -94,7 +95,7 @@ int main()
 	if (NULL == pangolin1)
 	{
 		printf("\n Pangolin creation failed \n");
-		return 0;
+		return 1;
 	}
 	pangolin1->type = Pangolin;
 	pangolin1->sex = Male;
@@ -110,7 +111,7 @@ int main()
 	if (NULL == giraffe1)
 	{
 		printf("\n Giraffe creation failed \n");
-		return 0;
+		return 1;
 	}
 	giraffe1->type = Giraffe;
 	giraffe1->sex = Male;
@@ -126,7 +127,7 @@ int main()
 	if (NULL == zebra1)
 	{
 		printf("\n Zebra creation failed \n");
-		return 0;
+		return 1;
 	}
 	zebra1->type = Zebra;
 	zebra1->sex = Female;
@@ -159,6 +160,6 @@ int main()
 	free(zebra1);
 	free(zooKeeper);
 
-	return 1;
+	return 0;
 }
 
