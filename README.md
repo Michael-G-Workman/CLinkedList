@@ -7,3 +7,5 @@ In the first part, we demonstrate a singly linked list with zoo animals as the n
 
 
 This example freely distributable under terms of MIT open source license
+
+michael.g.workman@gmail.com
